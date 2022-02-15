@@ -1,7 +1,7 @@
-# Azure App Service の MySQL In App　において #2002 - An attempt was made to access a socket in a way forbidden by its access permissions.　と出るエラーについて
+# Azure App Service の MySQL In App において #2002 - An attempt was made to access a socket in a way forbidden by its access permissions. と出るエラーについて
 
 ## このドキュメントの内容
-Azure App Service の MySQL In App の管理画面 https://APPLICATIONNAME.scm.azurewebsites.net/phpMyAdmin/ (APPLICATIONNAME にはデプロイを行なったアプリケーション名) を表示する際、下記のエラーに遭遇したので、自身の忘備録として残しておきます。
+Azure App Service の MySQL In App の管理画面 https://APPLICATIONNAME.scm.azurewebsites.net/phpMyAdmin/ (APPLICATIONNAME はアプリケーション名) を表示する際、下記のエラーに遭遇したので自身の忘備録として残しておきます。
 > #2002 - An attempt was made to access a socket in a way forbidden by its access permissions.  
 \- The server is not responding (or the local server's socket is not correctly configured).  
 mysqli_real_connect(): (HY000/2002): An attempt was made to access a socket in a way forbidden by its access permissions.
@@ -27,3 +27,11 @@ stackoverflow にもしっかり書いてありました。
 This only affects app services without Always On enabled.
 
 https://stackoverflow.com/a/57545678/12045751
+
+本ドキュメントが何かの役に立てば幸いです。
+
+Toxumuharu
+
+## 参考文献
+- https://stackoverflow.com/q/56028539/12045751
+
